@@ -1,0 +1,41 @@
+
+:root { 
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #1259c3;
+    --colorGrisoscuro: #666;
+    --colorGrisclaro: #ebebeb;
+    --colorVerde: #39b54a; 
+
+    --fuenteGeneral: 'Roboto';
+
+    --fsBody: 12px;
+    --fsTitle: 24px;
+    --fsPrice: 18px;
+    --fsDiscount: 16px;
+    --fsDescription: 16px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+body {
+
+    font-family: var(--fuenteGeneral);
+    font-size: var(--fsBody);
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorNegro);
+}
+
+li {
+    list-style: none;
+}
+
+ol, ul
+{
+    padding: 0px;
+}
