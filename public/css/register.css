@@ -1,0 +1,23 @@
+.home__main__register
+{
+  background-color: var(--colorGrisclaro); 
+  font-size: var(--fsBody); 
+  padding: 10px;
+}
+
+.home__main__register form
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+.home__main__register input
+{
+    border: none;
+    padding: 5px;
+    margin: 10px;
+
+}
