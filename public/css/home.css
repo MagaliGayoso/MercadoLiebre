@@ -1,26 +1,42 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
 /*HEADER*/
 .home__header
 {
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--colorAmarillo);
     font-size: var(--fsBody);
     padding-bottom: 15px;
 }
 
+.home__header a
+{
+    margin: 10px 5px;
+    width: 30%;
+}
+
 .home__header img
 {
-    width: 50%;
-    margin: 5px 15px;
+    width: 100%;
 }
 
 .home__header form
 {
-    margin: 5px 15px;
+    width: 65%;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .home__header p
 {
+    width: 100%;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .home__header__menu
@@ -31,9 +47,14 @@
 
 .home__header__menu ul
 {
-    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
 }
-
+.home__header__menu ul li
+{
+    margin: 5px;
+}
 #burger
 {
     display: flex;
@@ -64,42 +85,59 @@
 .home__main__products
 {
     text-align: center;
-    width: 90%;
-    margin: 10px;
+    margin: 20px
 }
 
 .home__main__products h3
 {
     margin: 20px 0px;
     font-size: var(--fsTitle);
+    width: 100%;
 }
 
 .home__main__products article
 {
     background-color: white;
     border-radius: 5px;
-    margin: 10px 5%;
-    border-top: 1px solid #ebebeb;
+    margin: 10px 5px;
+    border-top: 1px solid var(--colorGrisOscuro);
 }
 
 .home__main__products__infobox
 {
+    display: flex;
+    flex-wrap: wrap;
     border: solid 1px var(--colorGrisClaro);
     padding: 15px;
     text-align: left;
+    position: relative;
+}
+
+.home__main__products__infobox p
+{
+    margin: 5px
 }
 
 .home__main__products__infobox b
 {
     display: none;
+    width: 100%;
 }
 
 .home__main__products__infobox i
 {
     color: var(--colorVerde);
-    padding: 10px;
-    border: solid 1px var(--colorVerde);
-    border-radius: 30px;
+   display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
 }
 
 .home__main__products__price
@@ -148,9 +186,29 @@
 
 @media (min-width: 768px)  /*Tablet*/
 {
+    .home__header
+    {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .home__header form
+    {
+        display: inline;
+        width: 30%;
+        text-align: center;
+    }
+
+    .home__header p
+    {
+        width: 35%;
+    }
     .home__header__menu
     {
-        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
         padding-left: 10px;
     }
     .home__header__menu ul
@@ -163,6 +221,12 @@
         display: none;
     }
 
+    .home__main__products
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .home__main__products__infobox b
     {
         display: inline;
@@ -170,12 +234,18 @@
 
     .home__main__products article
     {
+        width: 48%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
     }
 }
 
 @media (min-width: 1024px) /*Desktop */
 {
+    .home__main__products article
+    {
+        width: 24%;
+    }
 
 }
 
