@@ -1,0 +1,35 @@
+.home__main__login
+{
+    background-color: var(--colorGrisclaro);
+    font-size: var(--fsBody);
+}
+
+.home__main__login form
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+.home__main__login input
+{
+    border: none;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.home__main__login button
+{
+    border-radius: 5px;
+    background-color: var(--colorCeleste);
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 15px;
+
+}
