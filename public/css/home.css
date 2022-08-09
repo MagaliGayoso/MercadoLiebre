@@ -101,6 +101,12 @@
     border-radius: 5px;
     margin: 10px 5px;
     border-top: 1px solid var(--colorGrisOscuro);
+    transition: box-shadow 400ms;
+}
+
+.home__main__products article:hover
+{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .home__main__products__infobox
@@ -120,8 +126,14 @@
 
 .home__main__products__infobox b
 {
-    display: none;
     width: 100%;
+    opacity: 0;
+    transition: opacity 450ms;
+}
+
+.home__main__products__infobox b:hover
+{
+    opacity: 0.5;
 }
 
 .home__main__products__infobox i
@@ -138,6 +150,12 @@ border-radius: 50%;
 position: absolute;
 right: 20px;
 top: -15px;
+transition: rotate() 1s;
+}
+
+.home__main__products__infobox i:hover
+{
+    rotate: 90deg;
 }
 
 .home__main__products__price
@@ -171,6 +189,12 @@ top: -15px;
     font-size: 2em;
     color: var(--colorCeleste);
     margin-bottom: 10px;
+    transition: color 450ms;
+}
+
+.home__footer div i:hover
+{
+    color: var(--colorVerde);
 }
 
 .home__footer div h4
@@ -235,7 +259,7 @@ top: -15px;
     .home__main__products article
     {
         width: 48%;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
         
     }
 }
@@ -246,6 +270,19 @@ top: -15px;
     {
         width: 24%;
     }
+
+    .home__footer
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .home__footer div
+    {
+       width: 30%;
+    }
+
 
 }
 

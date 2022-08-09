@@ -25,11 +25,17 @@
 .home__main__login button
 {
     border-radius: 5px;
-    background-color: var(--colorCeleste);
+    background-color: var(--colorVerde);
     color: white;
     text-align: center;
     border: 1px solid white;
     padding: 10px;
     margin: 15px;
+    transition: background-color 0,5ms;
 
+}
+
+.home__main__login button:hover
+{
+    background-color: #0022AA;
 }
