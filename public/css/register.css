@@ -21,3 +21,39 @@
     margin: 10px;
 
 }
+
+.home__main__register label
+{
+  padding-top: 10px;
+}
+
+.home__main__register div
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.perfil p
+{
+  padding-top: 10px;
+  padding-right: 30px;
+}
+
+.categorias p
+{
+  padding-top: 15px;
+  padding-right: 30px;
+}
+
+.categorias input
+{
+  margin: none ;
+}
+.home__main__register button
+{
+  background-color: var(--colorCeleste);
+  color: white;
+  margin: 10px;
+  border: 1px solid white;
+  padding: 5px;
+}
