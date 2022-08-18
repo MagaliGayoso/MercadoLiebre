@@ -45,6 +45,12 @@
     margin-bottom: 20px;
 }
 
+.home__header__menu:hover
+{
+    display: flex;
+    
+}
+
 .home__header__menu ul
 {
     display: flex;
@@ -268,7 +274,7 @@ transition: rotate() 1s;
 {
     .home__main__products article
     {
-        width: 24%;
+        width: 23%;
     }
 
     .home__footer

@@ -34,16 +34,50 @@
         </nav>
         <div id="burger"><i class="fa-solid fa-bars"></i></div>
     </header>
-    <main class="home__main__login">
+    <main class="home__main__register">
+        
+        <form action="/views/register.html" method="post">
 
-        <form action="/views/login.html" method="post" class="form">
+            <input type="text" placeholder="Nombre y apellido" name="Nombre">
 
-        <input type="text" placeholder="Nombre de usuario" name="text" id="Nombre">
-        <input type="password" placeholder="Elegi tu contraseña" name="password" id="Contraseña">
+            <input type="text" placeholder="Nombre de usuari@" name="Usuario">
+
+            <input type="text" placeholder="Domicilio" name="Domicilio">
+
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="nacimiento">
+
+            <label>Perfil del usuario</label>
+            <div class="perfil">
+            <input type="radio" name="perfil" value="Comprar" placeholder="Comprar"><p>Comprar</p>
+            <input type="radio" name="perfil" value="Vender"><p>Vender</p>
+        </div>
+
+            <label for="categorias">Categorias de interes</label>
+            <div class="categorias">
+            <input type="checkbox" name="categorias" value="Electro"><p>Electro</p>
+            <input type="checkbox" name="categorias" value="Moda"><p>Moda</p>
+            <input type="checkbox" name="categorias" value="Hogar"><p>Hogar</p>
+            <input type="checkbox" name="categorias" value="Jugueteria"><p>Jugueteria</p>
+            <input type="checkbox" name="categorias" value="Vida sana"><p>Vida sana</p>
+        </div>
+            
+        <label>Foto de usuario</label>
+            <input type="file" placeholder="Foto de usuario" name="foto">
+
+            <input type="password" placeholder="Contraseña" name="password">
+
+            <input type="password" placeholder="Confirmar Contraseña" name="password">
+
             <button type="submit">Enviar</button>
-        </form>
 
-        </main>
+            <button type="reset">Cancelar</button>
+
+
+
+        </form>
+        
+    </main>
     <footer class="home__footer">
         <div>
             <i class="fa-solid fa-credit-card"></i>
